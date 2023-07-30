@@ -1,0 +1,20 @@
+.blog-preview {
+  margin: 20px 0;
+  padding: 10px 16px;
+  border-bottom: 5px solid #dac8c8;
+  border-right: 5px solid #dac8c8;
+  border-radius: 50px;
+}
+
+.blog-preview h2 {
+  background-color: rgb(195, 195, 219);
+  text-align: left;
+  color: rgb(248, 248, 111);
+  margin-bottom: 5px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px;
+}
+
+.blog-preview:hover {
+  box-shadow: 10px 10px 5px rgba(215, 83, 83, 0.1);
+}

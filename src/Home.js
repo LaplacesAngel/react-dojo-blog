@@ -4,9 +4,10 @@ const Home = () => {
   const title = "NewTown Dogs";
   const [name, setName] = useState("Oayk");
   const [age, setAge] = useState(36);
-  //let likes = 50;
+  let likes = 50;
   let person = { name: "Saul", age: 36, isCool: true };
-  //let link = "http://www.google.com";
+
+  let link = "http://www.google.com";
 
   //react to click events with e - the event itself, can be passed in as an argument
   const handleClick = (e) => {
@@ -25,14 +26,19 @@ const Home = () => {
   return (
     <div className="home">
       <h1>{title}</h1>
+      <p>Liked {likes} times</p>
       <button onClick={handleClick}>Book Now</button>
       <button onClick={(e) => handleClickAgain("Paul", e)}>
         Click me again
       </button>
       <p>
-        {name} is {age} years old
+        {name} is {age} years old. Also math.random = {Math.random() * 100}
       </p>
       <button onClick={handleClickChange}>Change Name</button>
+      <br />
+      <button>
+        <a href={link}>Google</a>
+      </button>
     </div>
   );
 };
